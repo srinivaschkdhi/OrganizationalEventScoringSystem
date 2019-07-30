@@ -1,0 +1,16 @@
+.carousel-container{
+    .carousel-inner{
+        .carousel-item-right.active, .carousel-item-next {
+            transform: translateX(33.33%);
+        }
+        .carousel-item-left.active, .carousel-item-prev {
+            transform: translateX(-33.33%);
+        }
+        .carousel-item-right, .carousel-item-left{ 
+            transform: translateX(0);
+        }
+        img{
+            float: left;
+        }
+    }
+}
