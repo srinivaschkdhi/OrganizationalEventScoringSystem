@@ -15,6 +15,6 @@ import { HighchartsChartModule} from 'highcharts-angular';
     SharedRoutingModule,
     HighchartsChartModule
   ],
-  exports:[HeaderComponent,FooterComponent]
+  exports:[HeaderComponent,FooterComponent,CarouselComponent,BarChartComponent]
 })
 export class SharedModule { }
