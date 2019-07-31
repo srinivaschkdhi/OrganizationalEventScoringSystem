@@ -13,6 +13,7 @@
                 transform: translateX(0);
             }
             .carousel-item{
+                height: 273px;
                 .event-tile{
                     background-color: #FFFFFF;
                     float: left;
@@ -35,8 +36,11 @@
                             padding: 0 0 10px 12px;
                             font-size: 14px;
                             color: #828282;
+                            margin: 0;
                             i:first-child{
                                 color: #76CDD8;
+                                font-size: 15px;
+                                vertical-align: unset;
                             }
                             i:last-child{
                                 vertical-align: bottom;
