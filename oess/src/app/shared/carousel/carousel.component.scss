@@ -1,16 +1,55 @@
 .carousel-container{
-    .carousel-inner{
-        .carousel-item-right.active, .carousel-item-next {
-            transform: translateX(33.33%);
+    #eventCarousel{
+        .carousel-inner{
+            margin: 0 10px;
+            width: 98%;
+            .carousel-item-right.active, .carousel-item-next {
+                transform: translateX(33.33%);
+            }
+            .carousel-item-left.active, .carousel-item-prev {
+                transform: translateX(-33.33%);
+            }
+            .carousel-item-right, .carousel-item-left{ 
+                transform: translateX(0);
+            }
+            .carousel-item{
+                .event-tile{
+                    background-color: #FFFFFF;
+                    float: left;
+                    padding: 0;
+                    margin: 0 15px;
+                    width: 30.33%;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                    img{
+                        max-width: 100%;
+                    }
+                    p{
+                        text-align: left;
+                        &.event-title{
+                            padding: 10px 0 17px 12px;
+                            margin: 0;
+                            font-size: 24px;
+                            color: #464547;
+                        }
+                        &.event-date{
+                            padding: 0 0 10px 12px;
+                            font-size: 14px;
+                            color: #828282;
+                            i:first-child{
+                                color: #76CDD8;
+                            }
+                            i:last-child{
+                                vertical-align: bottom;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        .carousel-item-left.active, .carousel-item-prev {
-            transform: translateX(-33.33%);
-        }
-        .carousel-item-right, .carousel-item-left{ 
-            transform: translateX(0);
-        }
-        img{
-            float: left;
+        .carousel-control-prev, .carousel-control-next{
+            width: 1.4%;
+            background-color: #c4c4c4;
         }
     }
 }
+

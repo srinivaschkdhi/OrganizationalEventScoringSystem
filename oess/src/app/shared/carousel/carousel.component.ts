@@ -15,8 +15,8 @@ export class CarouselComponent implements OnInit {
   }
 
   animateCarousel(){
-    $('#recipeCarousel').carousel({
-      interval: 2000
+    $('#eventCarousel').carousel({
+      interval: 200000
     })
     
     $('.carousel .carousel-item').each(function(){
