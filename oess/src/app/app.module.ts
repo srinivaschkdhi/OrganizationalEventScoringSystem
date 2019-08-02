@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { SuperAdminModule } from './super-admin/super-admin.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,6 +17,7 @@ import { SuperAdminModule } from './super-admin/super-admin.module';
     AppRoutingModule,
     SharedModule,
     SuperAdminModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

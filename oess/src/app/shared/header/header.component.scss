@@ -13,50 +13,92 @@
             font-family: -apple-system, BlinkMacSystemFont,
             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            &:focus{
+                outline: none;
+            }
         }
     }
-    .left-menu{
-        ul{
-            li{
-                float: left;
-                padding: 16px 32px;
-                font-weight: bold;
-                font-size: 18px;
-                text-transform: uppercase;
-                i{
-                    vertical-align: bottom;
-                    font-size: 28px;
+    .main-header{
+        .left-menu{
+            ul{
+                li{
+                    float: left;
+                    padding: 16px 32px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    i{
+                        vertical-align: bottom;
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    
+        .right-menu{
+            ul{
+                li{
+                    float: right;
+                    padding: 20px 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    i{
+                        vertical-align: bottom;
+                        font-size: 34px;
+                    }
+                    &.active{
+                        color: #76CDD8;
+                    }
+                    &.menu-icon{
+                        padding: 14px 7px 0 7px;
+                    }
+                    &.profile-icon{
+                        margin: 12px 0 0 63px;
+                        padding: 0;
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        background: ghostwhite;
+                    }
                 }
             }
         }
     }
 
-    .right-menu{
-        ul{
-            li{
-                float: right;
-                padding: 20px 30px;
-                font-size: 14px;
+    .sub-header{
+        .dashboard-welcome{
+            h3{
+                padding: 13px 40px;
+                font-size: 18px;
+                background-color: #ffffff;
                 font-weight: 500;
-                text-transform: capitalize;
-                i{
-                    vertical-align: bottom;
-                    font-size: 34px;
-                }
-                &.active{
-                    color: #76CDD8;
-                }
-                &.menu-icon{
-                    padding: 14px 7px 0 7px;
-                }
-                &.profile-icon{
-                    margin: 12px 0 0 63px;
-                    padding: 0;
-                    border: 2px solid #fff;
-                    border-radius: 50%;
-                    background: ghostwhite;
-                }
+                margin: 0;
             }
         }
     }
 }
+.cdk-overlay-container{
+    .cdk-overlay-connected-position-bounding-box{
+        top: 61px;
+        .mat-menu-content{
+            background-color: #464547;
+            padding: 0;
+            button{
+                &:focus{
+                    outline: transparent;
+                }
+                color: #fff;
+                border-bottom: 1px solid #878787;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0 30px;
+                height: 52px;
+            }
+        }
+    }
+}
+

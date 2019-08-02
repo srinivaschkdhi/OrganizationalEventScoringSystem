@@ -3,13 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ManageModule } from './manage/manage.module';
 
-const routes: Routes = [{
- path:'Manage',
- loadChildren:()=>ManageModule
-},{
-  path:'dashboard',
-  component:DashboardComponent
-}
+
+const routes: Routes = [
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'manage',
+    loadChildren: () => ManageModule
+  }
 ];
 
 @NgModule({
