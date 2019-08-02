@@ -4,13 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 import { SuperAdminModule } from './super-admin/super-admin.module';
 
+
 const routes: Routes = [
   {
     path: 'carousel',
     loadChildren: () => SharedModule
-  },
+  }, 
   {
-    path: 'superAdmin',
+    path: 'admin',
     loadChildren: () => SuperAdminModule
   }
 ];

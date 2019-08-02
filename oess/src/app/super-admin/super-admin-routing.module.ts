@@ -6,6 +6,9 @@ import { ManageModule } from './manage/manage.module';
 const routes: Routes = [{
  path:'Manage',
  loadChildren:()=>ManageModule
+},{
+  path:'dashboard',
+  component:DashboardComponent
 }
 ];
 

@@ -1,0 +1,88 @@
+<div class="accordion-container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="teamOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" (click)="toggleIcon()" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <ng-container *ngIf="isOpen">
+                  <i class="material-icons">expand_more</i>Team 1
+              </ng-container>
+              <ng-container *ngIf="!isOpen">
+                  <i class="material-icons">expand_less</i>Team 1
+              </ng-container>
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="teamOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Team Owners</td>
+                  <td>Head Count</td>
+                  <td>Points</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Basha Syed</td>
+                  <td>94</td>
+                  <td>155</td>
+                </tr>
+                <tr>
+                  <td>Basha Syed</td>
+                  <td>94</td>
+                  <td>155</td>
+                </tr>
+                <tr>
+                  <td>Basha Syed</td>
+                  <td>94</td>
+                  <td>155</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="teamTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" (click)="toggleIcon()" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <ng-container *ngIf="isOpen">
+                  <i class="material-icons">expand_more</i>Team 2
+              </ng-container>
+              <ng-container *ngIf="!isOpen">
+                  <i class="material-icons">expand_less</i>Team 2
+              </ng-container>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="teamTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="teamThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" (click)="toggleIcon()" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <ng-container *ngIf="isOpen">
+                  <i class="material-icons">expand_more</i>Team 3
+              </ng-container>
+              <ng-container *ngIf="!isOpen">
+                  <i class="material-icons">expand_less</i>Team 3
+              </ng-container>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="teamThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

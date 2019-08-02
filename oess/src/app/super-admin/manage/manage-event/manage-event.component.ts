@@ -7,6 +7,8 @@ declare var $;
   styleUrls: ['./manage-event.component.scss']
 })
 export class ManageEventComponent implements OnInit {
+  removeRow(): any {
+};
   @ViewChild('dataTable') table: ElementRef;
   dataTable: any;
   tableInfo: any = [
@@ -79,33 +81,60 @@ export class ManageEventComponent implements OnInit {
   ];
 
   dtOptions: DataTables.Settings = {};
-  msg:string = "Well done!";
+  msg:string ;
   
   constructor() {
-
+    this.removeRow= function(){
+      this.dataTable.remove($(this).closest('tr'),
+      {
+                title: 'Delete record',
+                message: 'Are you sure you wish to remove this record?',
+                buttons: 'Delete'
+      }
+      )}
   }
 
   ngOnInit() {
+    this.msg = "Well done!";
+
     // this.dataTable = $(this.table.nativeElement);
     // this.dataTable.dataTable();
+    //  $('#example').on('click', 'a.editor_edit', function (e) {
+    //     e.preventDefault();
+ 
+    //     editor.edit( $(this).closest('tr'), {
+    //         title: 'Edit record',
+    //         buttons: 'Update'
+    //     } );
+    // } );
+ 
+    // Delete a record
+    // $('#example').on('click', 'a.editor_remove', function (e) {
+    //     e.preventDefault();
+ 
+    //     editor.remove( $(this).closest('tr'), {
+    //         title: 'Delete record',
+    //         message: 'Are you sure you wish to remove this record?',
+    //         buttons: 'Delete'
+    //     } );
+    // } );
+    
     this.dtOptions = {
       data:this.tableInfo,
       columns: [
             {title: 'Name', data: 'name'},
-            {title: 'Category', data: 'category' },
-            {
+            {title: 'Category', data: 'category' },{
               title: 'Start Date', data: 'startDate'
-            },
-            {
+            },{
               title: 'End Date', data: 'enddate'
-            },
-            {
+            },{
               title: 'Action',
               data: null,
-              defaultContent: '<button onclick="JavaScript:alert(this.msg)"><span class="fa fa-trash"></span></button> '
+               defaultContent: '<button onclick="removeRow()"><span class="fa fa-trash"></span></button> '
+              // defaultContent: '<a href="" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'
           }]
     };
   }
-
+  
 
 }
