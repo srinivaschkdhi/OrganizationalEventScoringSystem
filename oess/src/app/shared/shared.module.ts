@@ -8,7 +8,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { DataAccordionComponent } from './data-accordion/data-accordion.component';
 import { MatMenuModule } from '@angular/material/menu';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, CarouselComponent, BarChartComponent, DataAccordionComponent],
@@ -16,8 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     SharedRoutingModule,
     HighchartsChartModule,
-    MatMenuModule,
-    BrowserAnimationsModule
+    MatMenuModule
   ],
   exports: [HeaderComponent, FooterComponent, CarouselComponent, BarChartComponent, DataAccordionComponent]
 })

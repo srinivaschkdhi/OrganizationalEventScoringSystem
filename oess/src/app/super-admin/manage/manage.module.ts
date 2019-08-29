@@ -9,6 +9,12 @@ import { ManageEventComponent } from './manage-event/manage-event.component';
 import {DataTablesModule} from 'angular-datatables';
 import { ManageGroupComponent } from './manage-group/manage-group.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [AddEventComponent, ManageRolesComponent, ManageEventCategoriesComponent, ManageEventComponent, ManageGroupComponent],
@@ -16,7 +22,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     CommonModule,
     ManageRoutingModule,
     DataTablesModule,
-    DragDropModule
+    DragDropModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule
   ]
 })
 export class ManageModule { }

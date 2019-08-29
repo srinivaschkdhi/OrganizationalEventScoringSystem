@@ -1,8 +1,8 @@
 .carousel-container{
     #eventCarousel{
         .carousel-inner{
-            margin: 0 10px;
-            width: 98%;
+            padding: 0 0 0 18px;
+            width: 100%;
             .carousel-item-right.active, .carousel-item-next {
                 transform: translateX(33.33%);
             }

@@ -13,7 +13,6 @@ import { ManageModule } from './manage/manage.module';
     SuperAdminRoutingModule,
     SharedModule,
     ManageModule
-
   ]
 })
 export class SuperAdminModule { }
