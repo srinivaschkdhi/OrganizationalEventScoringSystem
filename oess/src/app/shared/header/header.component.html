@@ -1,0 +1,40 @@
+<div class="header-container">
+  <div class="main-header clearfix">
+      <div class="left-menu float-left">
+        <ul class="clearfix">
+          <li>
+            <i class="material-icons">bug_report</i>
+            <span><a href="#">Together</a></span>
+          </li>
+          <li>About</li>
+          <li>Rules</li>
+          <li mat-button [matMenuTriggerFor]="manageMenu">Manage</li>
+            <mat-menu #manageMenu="matMenu" class="manage-menu">
+              <button mat-menu-item routerLink="admin/manage/groups">Manage Groups</button>
+              <button mat-menu-item>Manage Roles</button>
+              <button mat-menu-item>Manage Events</button>
+              <button mat-menu-item>Manage Events Categories</button>
+              <button mat-menu-item>Manage Participant Type</button>
+              <button mat-menu-item>Upload Data</button>
+            </mat-menu>
+        </ul>
+      </div>
+    
+      <div class="right-menu float-right">
+        <ul class="clearfix">
+          <li class="menu-icon"><i class="material-icons">apps</i></li>
+          <li class="profile-icon"><i class="material-icons">person</i></li>
+          <li>landing page</li>
+          <li>individual</li>
+          <li>group head</li>
+          <li class="active" routerLink="admin/dashboard">super admin</li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="sub-header">
+      <div class="dashboard-welcome">
+        <h3>Welcome to {{message}} Dashboard</h3>
+      </div>
+  </div>
+</div>
