@@ -29,7 +29,7 @@
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
     "font-awesome": "^4.7.0",
-    "highcharts": "^7.1.2",
+    "highcharts": "^7.2.2",
     "highcharts-angular": "^2.4.0",
     "jquery": "^3.4.1",
     "rxjs": "^6.5.2",
